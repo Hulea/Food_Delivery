@@ -79,12 +79,23 @@ public class RegisterGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+<<<<<<< HEAD
+                User aux =  User.builder().
+                        firstName(firstNameField.getText()).
+                        lastName(lastNameField.getText()).
+                        phoneNumber(phoneNumberField.getText()).
+                        email(emailField.getText()).
+                        password(passwordField.getText()).
+                        accountType(User.roles.USER)
+                        .build();
+=======
                 User aux = new User(null,firstNameField.getText(),
                         lastNameField.getText(),
                         phoneNumberField.getText(),
                         emailField.getText(),
                         passwordField.getText(),
                         User.roles.USER);
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 
                     try {

@@ -23,8 +23,25 @@ class Login extends React.Component{
 
         this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
         this.verifyCallback = this.verifyCallback.bind(this);
+<<<<<<< HEAD
+        this.verifyEmail = this.verifyEmail.bind(this);
     }
 
+
+    verifyEmail = mail =>{
+        let pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+
+        if (!pattern.test(mail))
+           return false;
+
+
+    }
+
+
+=======
+    }
+
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     recaptchaLoaded() {
         console.log('capcha successfully loaded');
     }
@@ -40,6 +57,11 @@ class Login extends React.Component{
 
     }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     handleInput = event => {
 
         const { value,name } = event.target;
@@ -93,7 +115,22 @@ class Login extends React.Component{
         .catch(error => {
             console.log(error)
         })
+<<<<<<< HEAD
+
+        console.log(this.state.email);
+
+        axiosInstance.post("user/timestamp/login",credentials.email)
+        .then(console.log("login timestamp?"))
+        .catch(error => {
+            console.log(error)
+        })
+        
+
+
+      
+=======
         //}
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     }
 
 

@@ -5,7 +5,12 @@ import { Button } from "@material-ui/core";
 import {Link} from "@material-ui/core";
 import axios from "axios";
 import axiosInstance from "./axios";
+<<<<<<< HEAD
+import * as SockJS from "sockjs-client";
+import * as Stomp from "stompjs";
+=======
 
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 const columns = [
     {field:'name',headerName:'Name',width:300},
@@ -17,6 +22,30 @@ const columns = [
 
 class RestaurantFood extends React.Component{
 
+<<<<<<< HEAD
+
+    componentDidMount() {
+        this.connect();
+    };
+
+    connect() {
+        const URL = "http://localhost:8081/socket";
+        const websocket = new SockJS(URL);
+        const stompClient = Stomp.over(websocket);
+        stompClient.connect({}, frame => {
+            console.log(frame);
+            stompClient.subscribe("/topic/socket/notif2", notification => {
+                let message = notification.body;
+                alert(message);
+            })
+        })
+    }
+
+
+
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     constructor(){
         super();
         console.log(localStorage.getItem("RESTAURANT"));

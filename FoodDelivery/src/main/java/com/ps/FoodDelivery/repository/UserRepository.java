@@ -21,6 +21,12 @@ public interface UserRepository extends CrudRepository<User,Long> {
     @Query(value = "select * from user",nativeQuery = true)
     List<User> showAllUsers();
 
+<<<<<<< HEAD
+    @Query(value = "select * from user where logged=true",nativeQuery = true)
+    List<User> getLoggedUsers();
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     User findFirstById(Long id);
     void deleteById(Long id);
 

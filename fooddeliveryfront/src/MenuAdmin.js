@@ -22,7 +22,12 @@ import RestaurantIcon from '@material-ui/icons/Restaurant';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import {Grid} from "@material-ui/core";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+<<<<<<< HEAD
+import ScheduleIcon from '@material-ui/icons/Schedule';
+import axiosInstance from './axios';
+=======
 
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 const drawerWidth = 300;
 
@@ -100,6 +105,20 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+<<<<<<< HEAD
+
+  const logoutTimestamp = () =>{
+
+    axiosInstance.post("user/timestamp/logout",localStorage.getItem("USER_ID"))
+        .then(console.log("logout timestamp?"))
+        .catch(error => {
+            console.log(error)
+        })
+
+  };
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -124,7 +143,11 @@ export default function PersistentDrawerLeft() {
 
 
           <Link href="/login">
+<<<<<<< HEAD
+            <IconButton style={{ bottom: 3, right: 3 }} onClick={logoutTimestamp}>
+=======
             <IconButton style={{ bottom: 3, right: 3 }}>
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
               <ExitToAppIcon />
             </IconButton>
           </Link>
@@ -185,6 +208,20 @@ export default function PersistentDrawerLeft() {
             </ListItem>
         </Link>
 
+<<<<<<< HEAD
+        <Link href = "/admin/viewtimestamps">
+            <ListItem>
+                <ListItemAvatar>
+                <Avatar>
+                    <ScheduleIcon />
+                </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="View Timestamps" style={{ color: '#FFFFFF' }}/>
+            </ListItem>
+        </Link>
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
         </List>
       </Drawer>
       <main

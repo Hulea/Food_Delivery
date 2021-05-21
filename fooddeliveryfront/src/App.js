@@ -20,6 +20,14 @@ import Verify from './Verify';
 import AdminEditUsers from './AdminEditUsers';
 import AdminEditRestaurants from './AdminEditRestaurants';
 import AdminEditOffers from './AdminEditOffers';
+<<<<<<< HEAD
+import CardPayment from './CardPayment';
+import Explore from './Explore';
+import AdminViewTimestamps from './AdminViewTimestamps';
+import WebSocket from './WebSocket';
+import InviteAFriend from './InviteAFriend';
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 
 function App() {
@@ -42,7 +50,15 @@ function App() {
         <Route exact path="/admin/users" component={AdminEditUsers}/>
         <Route exact path="/admin/restaurants" component={AdminEditRestaurants}/>
         <Route exact path="/admin/offers" component={AdminEditOffers}/>
+<<<<<<< HEAD
+        <Route exact path="/user/order/cardpayment" component={CardPayment}/>
+        <Route exact path="/user/explore" component={Explore}/>
+        <Route exact path="/admin/viewtimestamps" component={AdminViewTimestamps}/>
+        <Route exact path="/notif" component={WebSocket}/>
+        <Route exact path="/user/invite" component={InviteAFriend}/>
+=======
 
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
       </Switch>
       {defaultRoute}
     </Router>

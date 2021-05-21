@@ -52,7 +52,11 @@ class AdminEditOffers extends React.Component{
                 <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                     <div style={{ display: 'flex', height: 600,width:1750 }}>
                         <div style={{ flexGrow: 5 }}>
+<<<<<<< HEAD
+                            <DataGrid rows={this.state.offers} columns={columns} pageSize={20} />
+=======
                             <DataGrid rows={this.state.orders} columns={columns} pageSize={20} />
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                         </div>
                     </div>
                 </div>

@@ -20,5 +20,11 @@ public interface UserService {
     String deleteById(Long id);
     String updateUser(UserDTO dto);
     User findFirstById(Long id);
+<<<<<<< HEAD
+    String loginTimestamp(String email);
+    String logoutTimestamp(String email);
+    int getNoOfLoggedUsers();
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 }

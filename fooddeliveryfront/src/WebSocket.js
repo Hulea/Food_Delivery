@@ -1,11 +1,15 @@
 import React from "react";
-import Sidemenu from './Menu';
-<<<<<<< HEAD
+import axios from 'axios';
 import * as SockJS from "sockjs-client";
 import * as Stomp from "stompjs";
 
-class UserSearchFood extends React.Component{
 
+export default class WebSocket extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+        }
+    };
 
     componentDidMount() {
         this.connect();
@@ -25,31 +29,10 @@ class UserSearchFood extends React.Component{
     }
 
 
-
-=======
-
-
-class UserSearchFood extends React.Component{
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
-
-    constructor(){
-        super();
-    }
-
-    render(){
-        return(
-            <div>
-                <Sidemenu></Sidemenu>
-
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-
-                    <h1>Welcome User</h1>
-
-                </div>
-            </div>
+    render() {
+        return (
+            <h1>bosssss</h1>
         )
     }
 
 }
-
-export default UserSearchFood;

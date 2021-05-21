@@ -6,12 +6,19 @@ import axiosInstance from "./axios";
 import Sidemenu from "./MenuAdmin";
 import {Link} from "@material-ui/core";
 import Container from "@material-ui/core/Container";
+<<<<<<< HEAD
+import saveAs from "file-saver";
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 const columns = [
     {field:'id',headerName:'Id',width:300},
     {field:'name',headerName:'Name',width:300},
     {field:'location',headerName:'Location',width:300},
+<<<<<<< HEAD
+=======
     {field:'food',headerName:'Food',width:300},
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 ]
 
 
@@ -112,6 +119,30 @@ onSubmitEdit(){
 }
 
 
+<<<<<<< HEAD
+onSubmitExport(){
+
+     axiosInstance
+     .get("/restaurant/xml")
+     .then((res) => {
+
+
+        let blob = new Blob([res.data], { type: "text/xml;charset=utf-8" });
+
+        saveAs(blob, Math.floor(Math.random()*1000).toString() +".XML");
+        console.log(blob);
+      })
+     .catch(error => {
+        console.log(error)
+    })
+
+
+}
+
+
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     render(){
 
         return(
@@ -134,7 +165,10 @@ onSubmitEdit(){
                             label="Id"
                             onChange = {this.handleInput}
                             name="id" />
+<<<<<<< HEAD
+=======
                        
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                         </div>
 
                         <div >
@@ -144,17 +178,30 @@ onSubmitEdit(){
                             label="Name"
                             onChange = {this.handleInput}
                             name="name" />
+<<<<<<< HEAD
+
+                        </div>
+
+=======
                        
                         </div>
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                         <div>
                             <TextField
                             style={{'margin-right':'70px'}}
                             id="standard-basic"
                             label="Location"
+<<<<<<< HEAD
+                            onChange = {this.handleInput}
+                            name="location"/>
+                        </div>
+
+=======
                             onChange = {this.handleInput} 
                             name="location"/>
                            
                         </div>
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                         <div>
                             <TextField
                             style={{'margin-right':'70px'}}
@@ -162,7 +209,10 @@ onSubmitEdit(){
                             label="Food List"
                             onChange = {this.handleInput}
                             name="food" />
+<<<<<<< HEAD
+=======
                            
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                         </div>
                     </Container>
 
@@ -197,6 +247,20 @@ onSubmitEdit(){
                         </Button>
                     </div>
 
+<<<<<<< HEAD
+
+                    <div style = {{'margin-right':'20px'}}>
+                        <Button
+                                onClick={this.onSubmitExport}
+                                type = "submit"
+                                variant="contained"
+                                color="primary" >
+                            Export as XML
+                        </Button>
+                    </div>
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                     </div>
 
 

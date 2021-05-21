@@ -1,16 +1,29 @@
 package com.ps.FoodDelivery.service.impl;
 
 import com.ps.FoodDelivery.dto.RestaurantDTO;
+<<<<<<< HEAD
+=======
 import com.ps.FoodDelivery.exceptions.ApiExceptionResponse;
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 import com.ps.FoodDelivery.model.Food;
 import com.ps.FoodDelivery.model.Restaurant;
 import com.ps.FoodDelivery.repository.RestaurantRepository;
 import com.ps.FoodDelivery.service.RestaurantService;
+<<<<<<< HEAD
+import com.ps.FoodDelivery.utils.FileExporterXML;
+import com.ps.FoodDelivery.utils.FileExporter;
+import com.ps.FoodDelivery.utils.FileExtensions;
+import org.springframework.stereotype.Service;
+
+import javax.xml.bind.annotation.XmlRootElement;
+import java.util.List;
+=======
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Random;
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
@@ -79,8 +92,28 @@ public class RestaurantServiceImpl implements RestaurantService {
 
         }
 
+<<<<<<< HEAD
+    @Override
+    public String exportRestaurants(List<Restaurant> restaurants, String fileType) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        Restaurant aux = new Restaurant();
+
+        for(Restaurant i : restaurants){
+            aux.setFood(i.getFood());
+            aux.setName(i.getName());
+            aux.setLocation(i.getLocation());
+            FileExporter fileExporter = new FileExporterXML();
+            stringBuilder.append(fileExporter.exportData(aux));
+        }
+
+        return stringBuilder.toString();
+
+    }
+=======
 
 
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 
 }

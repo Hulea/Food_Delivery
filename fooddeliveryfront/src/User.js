@@ -5,7 +5,12 @@ import React from "react";
 import axiosInstance from "./axios";
 import Sidemenu from "./Menu";
 import {Link} from "@material-ui/core";
+<<<<<<< HEAD
+import * as SockJS from "sockjs-client";
+import * as Stomp from "stompjs";
+=======
 
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 
 const columns = [
@@ -16,6 +21,28 @@ const columns = [
 
 class User extends React.Component{
 
+<<<<<<< HEAD
+    componentDidMount() {
+        this.connect();
+    };
+
+    connect() {
+        const URL = "http://localhost:8081/socket";
+        const websocket = new SockJS(URL);
+        const stompClient = Stomp.over(websocket);
+        stompClient.connect({}, frame => {
+            console.log(frame);
+            stompClient.subscribe("/topic/socket/notif2", notification => {
+                let message = notification.body;
+                alert(message);
+            })
+        })
+    }
+
+
+
+=======
+>>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     constructor(){
         super();
         this.state = {
