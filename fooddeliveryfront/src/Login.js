@@ -188,7 +188,7 @@ class Login extends React.Component{
 
                             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center','margin-top':'20px'}}>
                                 <Recaptcha
-                                sitekey="6Ldud6saAAAAAJstGRvmyOLjO1iqgPbyCkzBBLrb"
+                                sitekey="insert your sitekey here"
                                 render="explicit"
                                 onloadCallback={this.recaptchaLoaded}
                                 verifyCallback={this.verifyCallback}
