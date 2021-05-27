@@ -1,10 +1,9 @@
 package com.ps.FoodDelivery.controller;
 
 
-<<<<<<< HEAD
+
 import com.ps.FoodDelivery.dto.CardPaymentDTO;
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
+
 import com.ps.FoodDelivery.dto.FoodTransportDTO;
 import com.ps.FoodDelivery.exceptions.ApiExceptionResponse;
 import com.ps.FoodDelivery.model.FoodTransport;
@@ -58,7 +57,7 @@ public class FoodTransportController {
     }
 
 
-<<<<<<< HEAD
+
 
     @PostMapping("/addwithcard")
     public ResponseEntity addTransportWithCard(@RequestBody CardPaymentDTO dto) throws ApiExceptionResponse{
@@ -88,8 +87,7 @@ public class FoodTransportController {
     }
 
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
+
     @GetMapping("/usertransport/{id}")
     public ResponseEntity<List<FoodTransport>> returnTransport(@PathVariable Long id){
 

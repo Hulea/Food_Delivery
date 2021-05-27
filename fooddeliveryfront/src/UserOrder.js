@@ -6,11 +6,8 @@ import {DataGrid}  from '@material-ui/data-grid';
 import {Button} from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-<<<<<<< HEAD
 import * as SockJS from "sockjs-client";
 import * as Stomp from "stompjs";
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 
 const columns = [
@@ -24,7 +21,6 @@ const columns = [
 
 class UserOrder extends React.Component{
 
-<<<<<<< HEAD
     componentDidMount() {
         this.connect();
     };
@@ -42,8 +38,6 @@ class UserOrder extends React.Component{
         })
     }
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
     constructor(){
         super();
@@ -136,10 +130,6 @@ class UserOrder extends React.Component{
 
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     handleInput = event => {
 
         const { value,name } = event.target;
@@ -157,15 +147,9 @@ class UserOrder extends React.Component{
                 <Sidemenu></Sidemenu>
 
                 <div style={{display: 'flex',  justifyContent:'left', alignItems:'center','margin-left':'100px','margin-bottom':'50px'}}>
-<<<<<<< HEAD
                         <TextField
                         style={{'margin-right':'70px'}}
                         id="standard-basic"
-=======
-                        <TextField 
-                        style={{'margin-right':'70px'}} 
-                        id="standard-basic" 
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                         label="Location"
                         name="location"
                         onChange = {this.handleInput}
@@ -186,7 +170,6 @@ class UserOrder extends React.Component{
                  </div>
 
                 <div style={{display: 'flex',  justifyContent:'center', alignItems:'center','margin-top':'20px'}}>
-<<<<<<< HEAD
 
                 <div style = {{'margin-right':'20px'}}>
                         <Button
@@ -198,8 +181,6 @@ class UserOrder extends React.Component{
                         </Button>
                     </div>
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                     <div style = {{'margin-right':'20px'}}>
                         <Button
                                 onClick = {this.deleteOrder}
@@ -219,12 +200,8 @@ class UserOrder extends React.Component{
                             Remove from order
                         </Button>
                     </div>
-<<<<<<< HEAD
 
-                    
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                 </div>
 
             </div>

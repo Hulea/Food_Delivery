@@ -23,7 +23,6 @@ class Login extends React.Component{
 
         this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
         this.verifyCallback = this.verifyCallback.bind(this);
-<<<<<<< HEAD
         this.verifyEmail = this.verifyEmail.bind(this);
     }
 
@@ -38,10 +37,6 @@ class Login extends React.Component{
     }
 
 
-=======
-    }
-
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     recaptchaLoaded() {
         console.log('capcha successfully loaded');
     }
@@ -57,11 +52,8 @@ class Login extends React.Component{
 
     }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     handleInput = event => {
 
         const { value,name } = event.target;
@@ -115,7 +107,6 @@ class Login extends React.Component{
         .catch(error => {
             console.log(error)
         })
-<<<<<<< HEAD
 
         console.log(this.state.email);
 
@@ -128,9 +119,6 @@ class Login extends React.Component{
 
 
       
-=======
-        //}
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     }
 
 

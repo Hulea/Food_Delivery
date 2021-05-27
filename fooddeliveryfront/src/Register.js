@@ -19,15 +19,12 @@ const columns = [
 ]
 
 
-<<<<<<< HEAD
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
 
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 class Register extends React.Component{
 
     constructor(){
@@ -45,10 +42,7 @@ class Register extends React.Component{
 
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     handleInput = event => {
 
         const { value,name } = event.target;
@@ -73,10 +67,7 @@ class Register extends React.Component{
 
         console.log(newUser)
 
-<<<<<<< HEAD
         if(validateEmail(newUser.email)){
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
         axiosInstance.post("/user/add",newUser)
         .then(console.log("ok"))
         .catch(error => {
@@ -88,14 +79,10 @@ class Register extends React.Component{
         .catch(error => {
             console.log(error)
         })
-<<<<<<< HEAD
         }
         else{
             alert("Invalid email!")
         }
-=======
-
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
     }
 

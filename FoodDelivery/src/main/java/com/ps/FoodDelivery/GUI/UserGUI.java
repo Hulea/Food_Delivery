@@ -280,12 +280,8 @@ public class UserGUI {
 
                 try {
                     foodOrderService.addFood(
-                            foodOrderService.findFirstByUser(userService.findById(id)),
-                            aux
-                    );
+                            foodOrderService.findFirstByUser(userService.findById(id)), aux);
                 }
-
-
                 catch(NullPointerException ex){
                     List<Food> f = new ArrayList<Food>();
                     f.add(aux);

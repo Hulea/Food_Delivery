@@ -8,10 +8,7 @@ import com.ps.FoodDelivery.exceptions.ApiExceptionResponse;
 import com.ps.FoodDelivery.model.User;
 import com.ps.FoodDelivery.repository.UserRepository;
 import com.ps.FoodDelivery.service.LoginService;
-<<<<<<< HEAD
 import com.ps.FoodDelivery.utils.PasswordEncryption;
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -50,11 +47,7 @@ public class LoginServiceImpl implements LoginService {
             response = LoginSuccessDTO.builder().role(role).build();
         }
 
-<<<<<<< HEAD
-       if(dto.getPassword().equals(PasswordEncryption.decrypt(user.getPassword(),user.getKey1()))){
-=======
-        if(dto.getPassword().equals(user.getPassword())){
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
+        if(dto.getPassword().equals(PasswordEncryption.decrypt(user.getPassword(),user.getKey1()))){
             return response;
         }
 

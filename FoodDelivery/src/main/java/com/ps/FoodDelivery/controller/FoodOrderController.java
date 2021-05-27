@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
+ 
 @RestController
 @CrossOrigin
 public class FoodOrderController {
@@ -27,15 +27,6 @@ public class FoodOrderController {
         this.foodOrderService = foodOrderService;
         this.userService = userService;
     }
-
-
-/*    @PostMapping("user/addorder/{id}")
-    public ResponseEntity addFoodToOrder(@RequestBody FoodDTO dto,@PathVariable Long id) throws ApiExceptionResponse{
-
-
-
-    }*/
-
 
     @GetMapping("user/orders/{user}")
     public ResponseEntity<List<Food>> getFoodOrders(@PathVariable Long user){

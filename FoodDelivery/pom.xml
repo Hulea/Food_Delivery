@@ -68,7 +68,7 @@
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 
-<<<<<<< HEAD
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
@@ -79,8 +79,7 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
+
 	</dependencies>
 
 	<build>

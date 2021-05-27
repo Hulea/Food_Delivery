@@ -20,10 +20,7 @@ public interface FoodOrderService {
     String removeFoodRet(FoodOrder foodOrder,Food food);
 
     void save(FoodOrder foodOrder);
-<<<<<<< HEAD
 
     //String exportFoodOrder(FoodOrder foodOrder, String fileType);
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 }

@@ -23,13 +23,8 @@ public class OfferController {
 
 
     @GetMapping("/admin")
-<<<<<<< HEAD
     public List<Offer> findAllOffers(){
         return offerService.showAllOffers();
-=======
-    public ResponseEntity<List<Offer>> findAllOffers(){
-        return ResponseEntity.status(HttpStatus.OK).body(offerService.showAllOffers());
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     }
 
 }

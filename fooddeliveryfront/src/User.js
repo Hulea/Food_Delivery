@@ -5,12 +5,8 @@ import React from "react";
 import axiosInstance from "./axios";
 import Sidemenu from "./Menu";
 import {Link} from "@material-ui/core";
-<<<<<<< HEAD
 import * as SockJS from "sockjs-client";
 import * as Stomp from "stompjs";
-=======
-
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 
 const columns = [
@@ -21,7 +17,6 @@ const columns = [
 
 class User extends React.Component{
 
-<<<<<<< HEAD
     componentDidMount() {
         this.connect();
     };
@@ -41,8 +36,6 @@ class User extends React.Component{
 
 
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
     constructor(){
         super();
         this.state = {

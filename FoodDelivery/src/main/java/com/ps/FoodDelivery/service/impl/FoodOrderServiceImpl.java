@@ -119,7 +119,6 @@ public class FoodOrderServiceImpl implements FoodOrderService {
         foodOrderRepository.save(foodOrder);
     }
 
-<<<<<<< HEAD
 //    @Override
 //    public String exportFoodOrder(FoodOrder foodOrder, String fileType) {
 //
@@ -128,7 +127,5 @@ public class FoodOrderServiceImpl implements FoodOrderService {
 //
 //    }
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 }

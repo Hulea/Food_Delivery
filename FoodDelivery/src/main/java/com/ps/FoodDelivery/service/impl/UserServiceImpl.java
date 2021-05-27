@@ -7,10 +7,9 @@ import com.ps.FoodDelivery.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-<<<<<<< HEAD
+
 import java.time.LocalTime;
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
+
 import java.util.List;
 
 @Service
@@ -111,7 +110,7 @@ public class UserServiceImpl implements UserService {
     public User findFirstById(Long id) {
         return userRepository.findFirstById(id);
     }
-<<<<<<< HEAD
+
 
     @Override
     public String loginTimestamp(String email) {
@@ -146,6 +145,5 @@ public class UserServiceImpl implements UserService {
     public int getNoOfLoggedUsers() {
         return userRepository.getLoggedUsers().size();
     }
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
+
 }

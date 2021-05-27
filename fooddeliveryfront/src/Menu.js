@@ -20,13 +20,9 @@ import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 import HomeIcon from '@material-ui/icons/Home';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import {Grid} from "@material-ui/core";
-<<<<<<< HEAD
 import ExploreIcon from '@material-ui/icons/Explore';
 import axiosInstance from './axios';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
-=======
-
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 
 const drawerWidth = 300;
 
@@ -91,13 +87,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
@@ -111,7 +104,6 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
-<<<<<<< HEAD
 
 
 
@@ -125,8 +117,6 @@ export default function PersistentDrawerLeft() {
 
   };
 
-=======
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -152,11 +142,7 @@ export default function PersistentDrawerLeft() {
 
 
               <Link href="/login">
-<<<<<<< HEAD
                 <IconButton style={{ bottom: 3, right: 3 }} onClick={logoutTimestamp}>
-=======
-                <IconButton style={{ bottom: 3, right: 3 }}>
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
                   <ExitToAppIcon />
                 </IconButton>
               </Link>
@@ -223,7 +209,6 @@ export default function PersistentDrawerLeft() {
                 </Avatar>
                 </ListItemAvatar>
                 <ListItemText primary="On the way" color = "white" style={{ color: '#FFFFFF' }}/>
-<<<<<<< HEAD
             </ListItem>
         </Link>
         
@@ -251,10 +236,6 @@ export default function PersistentDrawerLeft() {
         </Link>
 
 
-=======
-        </ListItem>
-        </Link>
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
         </List>
       </Drawer>
       <main

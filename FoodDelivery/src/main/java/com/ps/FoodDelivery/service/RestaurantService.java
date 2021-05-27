@@ -19,9 +19,5 @@ public interface RestaurantService {
     String deleteById(Long id);
 
     String updateRestaurant(RestaurantDTO dto);
-<<<<<<< HEAD
     String exportRestaurants(List<Restaurant> restaurants,String fileType);
-=======
-
->>>>>>> 583e829b44b8ed474109c9b0b4d0a65ffeb42dd4
 }
