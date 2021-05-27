@@ -92,5 +92,5 @@ export class Explore extends React.Component{
 
 
 export default GoogleApiWrapper({
-    apiKey: 'inser api key here'
+    apiKey: 'insert api key here'
   })(Explore);
